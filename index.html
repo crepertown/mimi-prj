@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Para Mimi ✦</title>
+  <meta name="description" content="Una noche estrellada para celebrar nuestro amor, Mimi.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Para Mimi ✦">
+  <meta property="og:description" content="Una noche estrellada para celebrar nuestro amor, Mimi.">
+  <meta property="og:image" content="og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Para Mimi ✦">
+  <meta name="twitter:description" content="Una noche estrellada para celebrar nuestro amor, Mimi.">
+  <meta name="twitter:image" content="og.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23ff8fb8' d='M50 86.7 14.8 51.2C-2.6 33.6 9.1 8 30.1 8c8.3 0 15.7 4 19.9 10.4C54.2 12 61.6 8 69.9 8c21 0 32.7 25.6 15.3 43.2L50 86.7Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="pantalla-carga" id="pantalla-carga" role="status" aria-live="polite">
+    <span class="pantalla-carga__corazon" aria-hidden="true">♥</span>
+    <span class="pantalla-carga__texto">preparando nuestra noche</span>
+  </div>
+  <main class="experiencia" aria-label="Una experiencia especial para Mimi">
+    <canvas id="cielo" aria-hidden="true"></canvas>
+    <div class="aviso-orientacion" role="status" aria-live="polite">Gira tu teléfono a vertical ✦</div>
+
+    <section class="escena escena--activa" data-scene="umbral" aria-labelledby="umbral-titulo">
+      <p class="destinataria" id="umbral-titulo">Para Mimi</p>
+      <p class="aviso-sonido">con sonido ♪</p>
+      <button class="corazon-umbral" id="abrir-corazon" type="button" aria-label="Abrir">
+        <span class="corazon-umbral__halo" aria-hidden="true"></span>
+        <svg class="corazon-umbral__svg" viewBox="0 0 100 100" aria-hidden="true">
+          <path fill="#fff" d="M50 86.7 14.8 51.2C-2.6 33.6 9.1 8 30.1 8c8.3 0 15.7 4 19.9 10.4C54.2 12 61.6 8 69.9 8c21 0 32.7 25.6 15.3 43.2L50 86.7Z"/>
+        </svg>
+        <span class="pista-umbral">toca</span>
+      </button>
+    </section>
+
+    <section class="escena escena--cielo" data-scene="cielo" aria-hidden="true" aria-labelledby="cielo-titulo">
+      <div class="cielo__contenido">
+        <h1 class="cielo__titulo" id="cielo-titulo"></h1>
+        <p class="cielo__contador"><span id="contador-noches">0</span> noches contigo</p>
+        <button class="boton-continuar" id="continuar-cielo" type="button">continuar <span aria-hidden="true">✦</span></button>
+      </div>
+    </section>
+
+    <section class="escena escena--carta" data-scene="carta" aria-hidden="true" aria-labelledby="carta-titulo">
+      <article class="pergamino" id="pergamino">
+        <div class="pergamino__contenido">
+          <p class="carta__saludo" id="carta-titulo">Para Mimi</p>
+          <div class="carta__texto" id="carta-texto" tabindex="0" role="button" aria-label="Carta, toca para completar la escritura"></div>
+          <p class="carta__firma" id="carta-firma"></p>
+          <p class="carta__fecha" id="carta-fecha"></p>
+          <button class="carta__continuar" id="continuar-carta" type="button">continuar <span aria-hidden="true">✦</span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="escena escena--colina" data-scene="escena-4" aria-hidden="true" aria-labelledby="colina-titulo">
+      <div class="colina__nebulosa colina__nebulosa--una" aria-hidden="true"></div>
+      <div class="colina__nebulosa colina__nebulosa--dos" aria-hidden="true"></div>
+      <div class="colina__nebulosa colina__nebulosa--tres" aria-hidden="true"></div>
+      <canvas class="galaxia galaxia--grande" data-galaxia="grande" aria-hidden="true"></canvas>
+      <canvas class="galaxia galaxia--mediana" data-galaxia="mediana" aria-hidden="true"></canvas>
+      <canvas class="galaxia galaxia--pequena" data-galaxia="pequena" aria-hidden="true"></canvas>
+      <svg class="colina__paisaje" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tres gatos contemplan una colina nocturna rodeada de peonías">
+        <defs>
+          <linearGradient id="colina-cielo" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#08122d"/><stop offset="1" stop-color="#05070f"/></linearGradient>
+        </defs>
+        <rect width="1080" height="1920" fill="url(#colina-cielo)"/>
+        <path class="colina__suelo" d="M0 1480Q240 1320 490 1450q260 125 590-80v550H0Z"/>
+        <g class="colina__flores">
+        </g>
+        <g class="gatos" aria-label="Gatos">
+          <g class="gato gato--blanco" data-gato="0" role="button" tabindex="0" aria-label="Gato 1">
+            <ellipse class="gato__halo" cx="330" cy="1435" rx="75" ry="110"/>
+            <path class="gato__cola" d="M305 1710q-110 40-60 125q35 45 80-5" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
+            <path class="gato__cuerpo" d="M270 1515q0-90 60-110q60 20 60 110v205H270Z" fill="#fff"/>
+            <path class="gato__cabeza" d="M285 1430v-85l45 35 45-35v85q-45 65-90 0Z" fill="#fff"/>
+            <path class="gato__oreja" d="M289 1370l-4-48 38 38m43 10 4-48-38 38" fill="none" stroke="#fff" stroke-width="15"/>
+          </g>
+          <g class="gato gato--manchas" data-gato="1" role="button" tabindex="0" aria-label="Gato 2">
+            <path class="gato__cola" d="M515 1710q110 40 60 125q-35 45-80-5" fill="none" stroke="#eee" stroke-width="24" stroke-linecap="round"/>
+            <path class="gato__cuerpo" d="M475 1515q0-90 60-110q60 20 60 110v205H475Z" fill="#f5f2e9"/>
+            <path d="M480 1530q45-65 100 0v75q-55 45-100 0Zm10-110q25-35 50 0v38q-25 20-50 0Z" fill="#202238"/>
+            <path class="gato__cabeza" d="M490 1430v-85l45 35 45-35v85q-45 65-90 0Z" fill="#f5f2e9"/>
+            <path class="gato__oreja" d="M494 1370l-4-48 38 38m43 10 4-48-38 38" fill="none" stroke="#f5f2e9" stroke-width="15"/>
+          </g>
+          <g class="gato gato--atigrado" data-gato="2" role="button" tabindex="0" aria-label="Gato 3">
+            <path class="gato__cola" d="M680 1710q-105 50-55 125q35 40 75-8" fill="none" stroke="#717887" stroke-width="24" stroke-linecap="round"/>
+            <path class="gato__cuerpo" d="M640 1515q0-90 60-110q60 20 60 110v205H640Z" fill="#717887"/>
+            <path class="gato__cabeza" d="M655 1430v-85l45 35 45-35v85q-45 65-90 0Z" fill="#717887"/>
+            <path class="gato__oreja" d="M659 1370l-4-48 38 38m43 10 4-48-38 38" fill="none" stroke="#717887" stroke-width="15"/>
+            <path d="M660 1530l40 30m-40 30 40 30m20-90 40 30m-40 30 40 30m-60-280 20 25m20-25 20 25" stroke="#424958" stroke-width="12"/>
+          </g>
+        </g>
+      </svg>
+      <div class="gato__corazon" aria-hidden="true">♥</div>
+      <div class="gato__nombre" aria-live="polite"></div>
+      <div class="colina__mensaje" id="colina-titulo">Feliz aniversario, Mimi 💖</div>
+      <canvas id="cierre-meteoros" class="cierre__meteoros" aria-hidden="true"></canvas>
+      <div class="cierre__capa" aria-hidden="true"></div>
+      <div class="cierre__mensaje" id="cierre-titulo">bipipi</div>
+      <button class="cierre__reiniciar" id="reiniciar" type="button">volver a empezar</button>
+    </section>
+    <!-- Escena de fotos: insertar aquí, entre la colina y el cierre final. -->
+    <div id="escena-fotos" aria-hidden="true"></div>
+    <section class="escena escena--cierre" data-scene="escena-5" aria-hidden="true"></section>
+
+    <button class="audio-control" id="control-audio" type="button" aria-label="Silenciar música" aria-pressed="false">
+      <svg class="icono-audio icono-audio--activo" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 9v6h4l5 4V5L8 9H4Zm12.2-1.6a1 1 0 0 0-1.4 1.4 4.5 4.5 0 0 1 0 6.4 1 1 0 1 0 1.4 1.4 6.5 6.5 0 0 0 0-9.2Zm2.8-2.8a1 1 0 0 0-1.4 1.4 8.5 8.5 0 0 1 0 12 1 1 0 1 0 1.4 1.4 10.5 10.5 0 0 0 0-14.8Z"/>
+      </svg>
+      <svg class="icono-audio icono-audio--silenciado" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m4.7 3.3-1.4 1.4L7.6 9H4v6h4l5 4v-5.6l3.3 3.3a1 1 0 0 0 1.4-1.4L4.7 3.3ZM13 5l-2.2 1.8L13 9V5Zm5.3 3.4a1 1 0 0 0-1.4 1.4 4.5 4.5 0 0 1 0 4.4 1 1 0 1 0 1.4 1.4 6.5 6.5 0 0 0 0-7.2Z"/>
+      </svg>
+    </button>
+  </main>
+
+  <audio id="musica" src="audio/sample.mp3" loop preload="auto"></audio>
+  <script src="js/main.js"></script>
+</body>
+</html>
